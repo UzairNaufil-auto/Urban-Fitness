@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Urban Fitness | Gym in North Nazimabad, Karachi</title>
+<meta name="description" content="Urban Fitness: where strength meets community. Bodybuilding, cardio and personal training in North Nazimabad, Karachi.">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p class="demo">Design preview for Urban Fitness. Sample layout, not the live site.</p>
+<header class="nav">
+  <a class="brand" href="#top"><img src="logo.jpg" alt="" width="44" height="44"><span>Urban Fitness</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" class="menu"><a href="#gym">The gym</a><a href="#plans">Plans</a><a href="#visit">Hours</a><a class="btn btn-sm" href="#join">Join now</a></nav>
+</header>
+
+<main id="top">
+<section class="hero dark">
+  <div class="hero-copy">
+    <p class="where">North Nazimabad, Karachi</p>
+    <h1>Where strength meets community.</h1>
+    <p class="lede">A dynamic, inclusive space for every fitness level. Proper equipment, expert trainers and a crowd that pushes you to keep going.</p>
+    <div class="actions"><a class="btn" href="#plans">See the plans</a><a class="btn btn-ghost" href="https://wa.me/923122282056">WhatsApp us</a></div>
+  </div>
+  <div class="shield" aria-hidden="true"><div><img src="floor-cardio.jpg" alt="" width="1128" height="600"></div></div>
+</section>
+
+<section class="facts dark" aria-label="At a glance">
+  <p><b>4</b> packages, Alpha to Delta</p>
+  <p><b>7 to 9 AM</b> and <b>5:30 PM to midnight</b>, Mon to Fri (gents)</p>
+  <p><b>1:1 training</b> on Charlie and Delta</p>
+</section>
+
+<section id="gym" class="light cut">
+  <div class="wrap two">
+    <div>
+      <h2>Built for every fitness level</h2>
+      <p>At Urban Fitness we give you a dynamic, inclusive space with proper equipment, expert trainers and a motivating environment. Strength training, cardio or functional work, everything you need to push your limits is here.</p>
+      <p>Join a community that thrives on progress and dedication.</p>
+      <ul class="ticks"><li>Manual equipment for bodybuilding</li><li>Electronic cardio machines</li><li>Boxing bag and functional rig</li><li>Personal trainers on Charlie and Delta</li></ul>
+    </div>
+    <div class="duo"><img src="back-extension.jpg" alt="Back extension bench on rubber flooring" loading="lazy"><img src="boxing-zone.jpg" alt="Boxing bag and training rig" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="dark cut">
+  <div class="wrap">
+    <h2>Inside the gym</h2>
+    <div class="gallery">
+      <figure class="g1"><img src="leg-press.jpg" alt="Leg press with orange pillars and blue floor lighting" loading="lazy"><figcaption>Leg press</figcaption></figure>
+      <figure class="g2"><img src="bench-row.jpg" alt="Row of shoulder press stations" loading="lazy"><figcaption>Shoulder press row</figcaption></figure>
+      <figure class="g3"><img src="floor-cardio.jpg" alt="Elliptical cross trainers along the mirror wall" loading="lazy"><figcaption>Cardio floor</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="plans" class="light cut">
+  <div class="wrap">
+    <h2>Plans</h2>
+    <p class="sub">Gents admission fee: PKR 1,500. Pick the package that matches your goal.</p>
+    <div class="plans" id="plans-list">
+      <article class="plan"><h3>Alpha</h3><p class="price">PKR 2,000<small> / month</small></p><p>Bodybuilding with manual equipment.</p><a class="btn" href="#join" data-plan="Alpha">Choose Alpha</a></article>
+      <article class="plan"><h3>Bravo</h3><p class="price">PKR 3,500<small> / month</small></p><p>Cardio with electronic machines.</p><a class="btn" href="#join" data-plan="Bravo">Choose Bravo</a></article>
+      <article class="plan pt"><span class="tag">With trainer</span><h3>Charlie</h3><p class="price">PKR 6,500<small> / month</small></p><p>Strength training with a personal trainer.</p><a class="btn" href="#join" data-plan="Charlie">Choose Charlie</a></article>
+      <article class="plan pt"><span class="tag">With trainer</span><h3>Delta</h3><p class="price">PKR 8,000<small> / month</small></p><p>Full personal training, bodybuilding and cardio together.</p><a class="btn" href="#join" data-plan="Delta">Choose Delta</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="dark cut">
+  <div class="wrap two">
+    <div>
+      <h2>Visit us</h2>
+      <h3>Gents timings</h3>
+      <p>Monday to Friday<br>7:00 to 9:00 AM<br>5:30 PM to 12:00 AM</p>
+      <p class="note">Ladies' timings and weekend hours: call or WhatsApp us.</p>
+      <h3>Find us</h3>
+      <p>SB 53, Block K, North Nazimabad, Karachi. Between 5Star and Sakhi Hassan Chowrangi, next to Agha Khan Laboratory.</p>
+      <p><a href="tel:+923122282056">+92 312 2282056</a> &nbsp;|&nbsp; <a href="https://www.google.com/maps/search/?api=1&query=Urban+Fitness+Block+K+North+Nazimabad+Karachi">Open in Maps</a></p>
+    </div>
+    <form id="join" novalidate>
+      <h3>Request membership</h3>
+      <label>Full name<input name="name" autocomplete="name" required><small class="err" data-for="name"></small></label>
+      <label>Phone or WhatsApp<input name="phone" type="tel" autocomplete="tel" required><small class="err" data-for="phone"></small></label>
+      <label>Plan<select name="plan" id="plan-select"><option>Alpha</option><option>Bravo</option><option>Charlie</option><option>Delta</option></select></label>
+      <label>Message (optional)<textarea name="message" rows="3" maxlength="400"></textarea></label>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit">Send request</button>
+      <p class="result" id="result" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot dark">
+  <a class="brand" href="#top"><img src="logo.jpg" alt="" width="44" height="44"><span>Urban Fitness</span></a>
+  <p>North Nazimabad, Karachi</p>
+  <p><a href="https://www.facebook.com/urbanfitnesskhi">Facebook</a> &nbsp;|&nbsp; <a href="https://wa.me/923122282056">WhatsApp</a> &nbsp;|&nbsp; <a href="admin.html">Admin demo</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

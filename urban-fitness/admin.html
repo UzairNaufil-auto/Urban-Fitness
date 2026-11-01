@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin demo | Urban Fitness</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<p class="demo">Admin demo with sample data. Nothing here is connected or saved.</p>
+
+<section id="login" class="login">
+  <form id="login-form">
+    <img src="logo.jpg" alt="" width="72" height="72">
+    <h1>Urban Fitness admin</h1>
+    <label>Email<input value="admin@urbanfitness.example" autocomplete="off"></label>
+    <label>Password<input type="password" value="demo-password" autocomplete="off"></label>
+    <button class="btn" type="submit">Sign in</button>
+    <p class="hint">Demo login, any details work.</p>
+  </form>
+</section>
+
+<div id="app" class="app" hidden>
+  <aside class="side">
+    <div class="brand"><img src="logo.jpg" alt="" width="40" height="40"><span>Urban Fitness</span></div>
+    <nav id="nav">
+      <button data-view="dashboard" class="on">Dashboard</button>
+      <button data-view="requests">Requests <b id="badge"></b></button>
+      <button data-view="members">Members</button>
+      <button data-view="plans">Plans</button>
+    </nav>
+    <div class="side-foot"><a href="index.html">View public site</a><button id="logout">Sign out</button></div>
+  </aside>
+  <main class="main">
+    <header class="top"><h2 id="title">Dashboard</h2><span class="pill">Sample data</span></header>
+    <section id="v-dashboard" class="view"></section>
+    <section id="v-requests" class="view" hidden></section>
+    <section id="v-members" class="view" hidden></section>
+    <section id="v-plans" class="view" hidden></section>
+  </main>
+</div>
+
+<div id="modal" class="modal" hidden><div class="card" role="dialog" aria-modal="true" aria-labelledby="m-title"><button class="x" id="m-close" aria-label="Close">Close</button><div id="m-body"></div></div></div>
+<p id="toast" class="toast" role="status" hidden></p>
+<script src="admin.js"></script>
+</body>
+</html>
